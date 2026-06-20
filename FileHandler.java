@@ -2,6 +2,11 @@ import java.io.*;
 import java.util.*;
 
 public class FileHandler {
+    /**
+     * Saves student details to a text file.
+     * 
+     * @param students List of students to save
+     */
 
     public static void save(ArrayList<Student> students) {
 

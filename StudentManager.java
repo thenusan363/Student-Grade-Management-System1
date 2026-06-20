@@ -3,12 +3,18 @@ public class StudentManager {
 
     ArrayList<Student> students = new ArrayList<>();
     HashMap<Integer, Student> map = new HashMap<>();
-
+    /**
+     * Adds a student to the manager.
+     * 
+     * @param s Student object to add
+     */
     public void addStudent(Student s) {
         students.add(s);
         map.put(s.getId(), s);
     }
-
+    /**
+     * Displays all students.
+     */
     public void viewStudents() {
         if (students.isEmpty()) {
             System.out.println("No Students Found.");
@@ -22,7 +28,13 @@ public class StudentManager {
             System.out.println("----------------------");
         }
     }
-
+    /**
+     * Updates student details.
+     * 
+     * @param id Student ID
+     * @param name New name
+     * @param marks New marks
+     */
     public void updateStudent(int id, String name, int marks) {
 
         if (map.containsKey(id)) {
@@ -39,7 +51,11 @@ public class StudentManager {
         }
 
     }
-
+    /**
+     * Deletes a student by ID.
+     * 
+     * @param id Student ID
+     */
     public void deleteStudent(int id) {
 
         Student s = map.remove(id);
@@ -52,7 +68,11 @@ public class StudentManager {
         }
 
     }
-
+    /**
+     * Returns all students.
+     * 
+     * @return List of students
+     */
     public ArrayList<Student> getStudents() {
         return students;
     }
