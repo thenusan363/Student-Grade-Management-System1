@@ -1,8 +1,10 @@
 import java.util.*;
+
 public class StudentManager {
 
     ArrayList<Student> students = new ArrayList<>();
     HashMap<Integer, Student> map = new HashMap<>();
+
     /**
      * Adds a student to the manager.
      * 
@@ -12,6 +14,7 @@ public class StudentManager {
         students.add(s);
         map.put(s.getId(), s);
     }
+
     /**
      * Displays all students.
      */
@@ -28,11 +31,12 @@ public class StudentManager {
             System.out.println("----------------------");
         }
     }
+
     /**
      * Updates student details.
      * 
-     * @param id Student ID
-     * @param name New name
+     * @param id    Student ID
+     * @param name  New name
      * @param marks New marks
      */
     public void updateStudent(int id, String name, int marks) {
@@ -49,8 +53,8 @@ public class StudentManager {
         } else {
             System.out.println("Student Not Found");
         }
-
     }
+
     /**
      * Deletes a student by ID.
      * 
@@ -68,6 +72,7 @@ public class StudentManager {
         }
 
     }
+
     /**
      * Returns all students.
      * 
@@ -77,4 +82,3 @@ public class StudentManager {
         return students;
     }
 }
-

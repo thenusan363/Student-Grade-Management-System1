@@ -6,11 +6,12 @@ public class Student {
     private int id;
     private String name;
     private int marks;
+
     /**
      * Creates a student object.
      * 
-     * @param id Student ID
-     * @param name Student Name
+     * @param id    Student ID
+     * @param name  Student Name
      * @param marks Student Marks
      */
     public Student(int id, String name, int marks) {
@@ -18,6 +19,7 @@ public class Student {
         this.name = name;
         this.marks = marks;
     }
+
     /**
      * Returns student ID.
      * 
@@ -26,6 +28,7 @@ public class Student {
     public int getId() {
         return id;
     }
+
     /**
      * Returns student name.
      * 
@@ -34,6 +37,7 @@ public class Student {
     public String getName() {
         return name;
     }
+
     /**
      * Returns student marks.
      * 
@@ -42,14 +46,16 @@ public class Student {
     public int getMarks() {
         return marks;
     }
+
     /**
      * Updates student name.
      * 
-     * @param name new name 
+     * @param name new name
      */
     public void setName(String name) {
         this.name = name;
     }
+
     /**
      * Updates student marks.
      * 
@@ -58,6 +64,7 @@ public class Student {
     public void setMarks(int marks) {
         this.marks = marks;
     }
+
     /**
      * Returns student details as string.
      * 
@@ -68,4 +75,3 @@ public class Student {
         return id + "," + name + "," + marks;
     }
 }
-    
