@@ -15,3 +15,5 @@ Java
 ## Author
 Thenusan
 
+## Screenshort
+![Student Grade Management System](screenshort.png)
